@@ -1,0 +1,32 @@
+<div style="background-color: #444444; opacity: 0.7;">
+  <h1 id = "websiteblurb" style="color:white; font-weight: bold;">Kord Pad</h1>
+</div>
+
+<div class="jumbotron" id = "titleSpace">
+  <h3 id = "websiteblurb">
+        {{title}}
+  </h3>
+</div>
+
+<div id="loginForm">
+    <h3> Sign In</h3>
+    <input type="text" id = "usernameBox" class="form-control" placeholder="Username">
+    <input type="password" id = "passwordBox" class="form-control" placeholder="Password">
+    <button id="loginButton" class="btn btn-success" (click) = "startVerification()"> Login </button>
+    <button id="guestButton" class="btn btn-danger" (click) = "guestContinue()"> Guest </button>
+    
+    
+    <br/>
+    
+    
+    <h3> Sign Up</h3>
+    <button data-toggle="collapse" data-target="#cnaform" class="btn btn-danger">Create Account</button>
+    <br/><br/>
+    <div id="cnaform" class="collapse">
+      <input type="text" id = "usBox1" class="form-control" placeholder="Enter Username">
+      <input type="text" id = "usBox2" class="form-control" placeholder="Enter Username Again">
+      <input type="password" id = "psBox1" class="form-control" placeholder="Enter Password">
+      <input type="password" id = "psBox2" class="form-control" placeholder="Enter Password Again">
+      <button id="loginButton" class="btn btn-success" (click) = "startSignUp()"> Sign Up </button>
+    </div>    
+</div>

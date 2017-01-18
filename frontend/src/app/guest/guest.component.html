@@ -1,0 +1,121 @@
+<button id="backToLoginButton" class="btn btn-danger" (click) = "guestBackToLogin()"> Back </button>
+<button id="backToLoginButton" class="btn btn-danger" (click) = "loginButtonFunction()"> Login </button>
+<button id="backToLoginButton" class="btn btn-default" (click) = "showLastChords()"> Last </button>
+<button id="backToLoginButton" class="btn btn-default" (click) = "showNextChords()"> Next </button>
+<h4> Not Logged in </h4>
+
+
+<br/><br/>
+<button id="fsbtn" (click)="openNav()" class="btn btn-success">Full Screen Mode</button>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse0">{{itemsShown[0].sheetname}}</a>
+      </h4>
+    </div>
+    <div id="collapse0" class="panel-collapse collapse">
+      <div class="panel-body" [innerHTML]="itemsShown[0].chordsstring.html"></div>
+      <div class="panel-footer">Version: {{itemsShown[0].sheetversion}}, Author: {{itemsShown[0].author}}, Datetime: {{itemsShown[0].datetime}}</div>
+    </div>
+  </div>
+</div>
+
+<br/><br/>
+<button id="fsbtn" (click)="openNav2()" class="btn btn-success">Full Screen Mode</button>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">{{itemsShown[1].sheetname}}</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body" [innerHTML]="itemsShown[1].chordsstring.html"></div>
+      <div class="panel-footer">Version: {{itemsShown[1].sheetversion}}, Author: {{itemsShown[1].author}}, Datetime: {{itemsShown[1].datetime}}</div>
+    </div>
+  </div>
+</div>
+
+<br/><br/>
+<button id="fsbtn" (click)="openNav3()" class="btn btn-success">Full Screen Mode</button>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse2">{{itemsShown[2].sheetname}}</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse" >
+      <div class="panel-body" [innerHTML]="itemsShown[2].chordsstring.html"></div>
+      <div class="panel-footer">Version: {{itemsShown[2].sheetversion}}, Author: {{itemsShown[2].author}}, Datetime: {{itemsShown[2].datetime}}</div>
+    </div>
+  </div>
+</div>
+
+<br/><br/>
+<button id="fsbtn" (click)="openNav4()" class="btn btn-success">Full Screen Mode</button>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse3">{{itemsShown[3].sheetname}}</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body" [innerHTML]="itemsShown[3].chordsstring.html"></div>
+      <div class="panel-footer">Version: {{itemsShown[3].sheetversion}}, Author: {{itemsShown[3].author}}, Datetime: {{itemsShown[3].datetime}}</div>
+    </div>
+  </div>
+</div>
+
+<br/><br/>
+<button id="fsbtn" (click)="openNav5()" class="btn btn-success">Full Screen Mode</button>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse4">{{itemsShown[4].sheetname}}</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body" [innerHTML]="itemsShown[4].chordsstring.html"></div>
+      <div class="panel-footer">Version: {{itemsShown[4].sheetversion}}, Author: {{itemsShown[4].author}}, Datetime: {{itemsShown[4].datetime}}</div>
+    </div>
+  </div>
+</div>
+
+<div id="myNav" class="overlay">
+  <a class="closebtn" (click)="closeNav()">Close</a>
+  <div class="overlay-content">
+    <p [innerHTML]="itemsShown[0].chordsstring.html"></p>
+  </div>
+</div>
+
+<div id="myNav2" class="overlay">
+  <a class="closebtn" (click)="closeNav2()">Close</a>
+  <div class="overlay-content">
+    <p [innerHTML]="itemsShown[1].chordsstring.html"></p>
+  </div>
+</div>
+
+<div id="myNav3" class="overlay">
+  <a class="closebtn" (click)="closeNav3()">Close</a>
+  <div class="overlay-content">
+    <p [innerHTML]="itemsShown[2].chordsstring.html"></p>
+  </div>
+</div>
+
+<div id="myNav4" class="overlay">
+  <a class="closebtn" (click)="closeNav4()">Close</a>
+  <div class="overlay-content">
+    <p [innerHTML]="itemsShown[3].chordsstring.html"></p>
+  </div>
+</div>
+
+<div id="myNav5" class="overlay">
+  <a class="closebtn" (click)="closeNav5()">Close</a>
+  <div class="overlay-content">
+    <p [innerHTML]="itemsShown[4].chordsstring.html"></p>
+  </div>
+</div>

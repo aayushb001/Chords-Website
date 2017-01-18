@@ -1,0 +1,34 @@
+#loginForm{
+    margin: 0 auto;
+    padding: 40px;
+    height: 620px;
+    width: 305px;
+    background-color: #344d75; 
+}
+
+#passwordBox{
+    width: 190px;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+#usernameBox{
+    width: 190px;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+#loginButton{
+    width: 190px;
+    margin: 10px;
+}
+
+#guestButton{
+    width: 190px;
+    margin: 10px;
+}
+
+#websiteblurb{
+     text-align: center;  
+     font-family: "Arial", "Times New Roman";
+}
